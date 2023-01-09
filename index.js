@@ -18,7 +18,7 @@ const images = [
         name: 'Seiser Alm Tees',
         image: 'https://i.imgur.com/MFs11po.jpg',
         id: 'img',
-        class: 'img-item', 'cursor-pointer'
+        class: 'img-item'
     },
     {
         name: 'Seiser Alm Huts',
@@ -94,9 +94,8 @@ for (let image of images){
     imagesHtml += `
     <div class="container">
         <h3>${image.name}</h3>
-        <a href="${image.name}.html"><img src="${image.image}">
+        <img src="${image.image}">
     </div>
     `
 }
 container.innerHTML = imagesHtml
-

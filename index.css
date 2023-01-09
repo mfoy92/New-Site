@@ -280,7 +280,9 @@ img, video {
         
       }
 
-
+.container img:hover {
+        opacity: 0.5;
+}
 
 .auto-fit {
         margin-left: 100px;
@@ -314,4 +316,10 @@ img, video {
 }
 
 
-
+.separate-img-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 40px auto;
+    width: 642px;
+}

@@ -310,7 +310,11 @@ img, video {
     display: none;
 }
 
-#img:hover {
+.img-item:hover{
     opacity: 0.5;
+}
+
+.img-item {
     cursor: pointer;
+
 }

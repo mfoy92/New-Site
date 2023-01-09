@@ -94,7 +94,7 @@ for (let image of images){
     imagesHtml += `
     <div class="container">
         <h3>${image.name}</h3>
-        <img id="img-item" src="${image.image}">
+        <a href="${image.name}.html"><img id="img-item" src="${image.image}"></a>
     </div>
     `
 }

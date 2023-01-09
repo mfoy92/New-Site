@@ -15,73 +15,73 @@ form.style.display = "flex"
 
 const images = [
     {
-        name: 'seiser-alm-trees',
+        name: 'Seiser Alm Tees',
         image: 'https://i.imgur.com/MFs11po.jpg',
         id: 'img',
         class: 'img-item'
     },
     {
-        name: 'seiser-alm-huts',
+        name: 'Seiser Alm Huts',
         image: 'https://i.imgur.com/LAKwO7w.jpg',
         id: 'img',
         class: 'img-item'
     },
     {
-        name: 'scottish-lake',
+        name: 'Loch Katrine, Scotland',
         image: 'https://i.imgur.com/UTve0lH.jpg',
         id: 'img',
         class: 'img-item'
     },
     {
-        name: 'seiser-alm-peaks',
+        name: 'Seiser Alm Peaks',
         image: 'https://i.imgur.com/iGaDpXz.jpg',
         id: 'img',
         class: 'img-item wide'
     },
     {
-        name: 'lomond-mist-one',
+        name: 'Loch Lomond Mist',
         image: 'https://i.imgur.com/gowNhb2.jpg',
         id: 'img',
         class: 'img-item'
     },
     {
-        name: 'italy-lake',
+        name: 'Lake of Carezza',
         image: 'https://i.imgur.com/A8zm9Jh.jpg',
         id: 'img',
         class: 'img-item'
     },
     {
-        name: 'italy-hills',
+        name: 'Vineyards',
         image: 'https://i.imgur.com/g62LHdd.jpg',
         id: 'img',
         class: 'img-item'
     },
     {
-        name: 'lomond-mist-two',
+        name: 'Above Scottish Clouds',
         image: 'https://i.imgur.com/YPt6gNF.jpg',
         id: 'img',
         class: 'img-item'
     },
     {
-        name: 'scottish-hills',
+        name: 'Scottish Hills',
         image: 'https://i.imgur.com/7B6kUkU.jpg',
         id: 'img',
         class: 'img-item wide'
     },
     {
-        name: 'scottish-castle',
+        name: 'Kilchurn Castle, Scotland',
         image: 'https://i.imgur.com/6YXA7p4.jpg',
         id: 'img',
         class: 'img-item'
     },
     {
-        name: 'scottish-street',
+        name: 'Culross, Scotland',
         image: 'https://i.imgur.com/hjabjpb.jpg',
         id: 'img',
         class: 'img-item'
     },
     {
-        name: 'kilchurn',
+        name: 'Kilchurn from across Loch Awe',
         image: 'https://i.imgur.com/GrRfnCx.jpg',
         id: 'img',
         class: 'img-item wide'

@@ -95,7 +95,6 @@ for (let image of images){
     <div class="container">
         <h3>${image.name}</h3>
         <img src="${image.image}">
-        <button id="${image.id}">Buy</button>
     </div>
     `
 }

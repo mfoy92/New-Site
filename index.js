@@ -18,7 +18,7 @@ const images = [
         name: 'Seiser Alm Tees',
         image: 'https://i.imgur.com/MFs11po.jpg',
         id: 'img',
-        class: 'img-item'
+        class: 'img-item', 'cursor-pointer'
     },
     {
         name: 'Seiser Alm Huts',

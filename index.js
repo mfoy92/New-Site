@@ -15,7 +15,7 @@ form.style.display = "flex"
 
 const images = [
     {
-        name: 'Seiser Alm Tees',
+        name: 'Seiser Alm Trees',
         image: 'https://i.imgur.com/MFs11po.jpg',
         id: 'img',
         class: 'img-item', 

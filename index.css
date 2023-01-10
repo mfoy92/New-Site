@@ -17,6 +17,11 @@ html {
     tab-size: 4;
 }
 
+#top-panel {
+    width: 100%;
+    border-bottom: 1px slategray solid;
+}
+
 #container-top {
    display: flex;
    justify-content: center;
@@ -319,12 +324,17 @@ img, video {
 
 }
 
+.separate-img-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 40px auto;
+    width: 642px;
+}
+
 .separate-img {
     width: 500px;
     margin-left: 50px;
-}
-
-.separate-img-container {
-    display: flex;
-    flex-direction: column;
+    box-shadow: 1px 1px 10px 1px #cbd5e1;
+    cursor: pointer;
 }

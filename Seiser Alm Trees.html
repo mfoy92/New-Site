@@ -5,9 +5,75 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <div id="top-panel" class="grid px-4 md:px-8 lg:px-12 h-12 items-center justify-between shadow" style="grid-template-columns: 1fr 2fr 1fr;">
+            <div class="flex">
+              <a class="center-x-y" href="index.html">
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gray-700">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.993221 14.7078C0.700328 14.4149 0.700327 13.94 0.993221 13.6471L13.94 0.70031C14.2329 0.407417 14.7078 0.407417 15.0007 0.70031C15.2936 0.993204 15.2936 1.46808 15.0007 1.76097L2.05388 14.7078C1.76099 15.0007 1.28611 15.0007 0.993221 14.7078Z" fill="black"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.764705 8.38397C0.471812 8.09107 0.471812 7.6162 0.764705 7.32331L7.24652 0.841497C7.53941 0.548604 8.01428 0.548604 8.30718 0.841497C8.60007 1.13439 8.60007 1.60926 8.30718 1.90216L1.82537 8.38397C1.53247 8.67686 1.0576 8.67686 0.764705 8.38397Z" fill="black"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.31695 14.9363C7.02406 14.6434 7.02406 14.1686 7.31695 13.8757L13.7988 7.39386C14.0917 7.10097 14.5665 7.10097 14.8594 7.39386C15.1523 7.68675 15.1523 8.16163 14.8594 8.45452L8.37761 14.9363C8.08472 15.2292 7.60984 15.2292 7.31695 14.9363Z" fill="black"></path>
+                </svg>
+                </a>      
+            </div>
+            <div class="center-x-y w-full">
+            </div>
+      
+            <div class="flex space-x-6 justify-end">
+      
+                <a onclick="return false" id="cartOpener" data-action="click->toggle#sendEvent" data-controller="location" data-location-emitable-value="toggleCart" data-location-hash-value="#cart" class="cart-icon inline-block relative flex-initial" href="#">
+                    <svg width="32" height="32" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="openCart" class="text-gray-700">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66016 6.16675H17.3268L16.8268 6.67H3.16016V15.3333C3.16016 16.1285 3.35928 16.7966 3.73037 17.2605C4.09546 17.7168 4.64589 18 5.41016 18H14.5768C15.3411 18 15.8915 17.7168 16.2566 17.2605C16.6277 16.7966 16.8268 16.1285 16.8268 15.3333V6.67L17.3268 6.16675V15.3333C17.3268 16.2048 17.1093 16.995 16.647 17.5728C16.1788 18.1582 15.4792 18.5 14.5768 18.5H5.41016C4.50776 18.5 3.80819 18.1582 3.33994 17.5728C2.8777 16.995 2.66016 16.2048 2.66016 15.3333V6.16675Z" fill="#333333"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30043 3.6743C6.91311 4.44895 6.91016 5.33106 6.91016 5.75V10.3329L6.41016 10.3333L6.41016 5.74189C6.41014 5.32277 6.41009 4.33695 6.85322 3.4507C7.07882 2.9995 7.42081 2.57029 7.93604 2.25543C8.45097 1.94075 9.12301 1.75 9.99349 1.75C10.864 1.75 11.536 1.94075 12.0509 2.25543C12.5662 2.57029 12.9082 2.9995 13.1338 3.4507C13.5769 4.33695 13.5768 5.32277 13.5768 5.74189V10.3329L13.0768 10.3333V5.75C13.0768 5.33106 13.0739 4.44895 12.6865 3.6743C12.4955 3.29217 12.2125 2.94012 11.7902 2.68207C11.3676 2.42383 10.7897 2.25 9.99349 2.25C9.19731 2.25 8.61934 2.42383 8.19677 2.68207C7.7745 2.94012 7.4915 3.29217 7.30043 3.6743Z" fill="#333333"></path>
+                    </svg>
+                    <turbo-frame id="nav_badge_user_38543"></turbo-frame>
+                </a>      
+            </div>
+          </div>
         <div class="separate-img-container">
             <img class="separate-img" src="https://i.imgur.com/MFs11po.jpg">
             <h1>CART</h1>
+            <form class="flex-auto p-6">
+                <div class="flex flex-wrap">
+                  <h1 class="flex-auto text-lg font-semibold text-slate-900">
+                    Seiser Alm Trees
+                  </h1>
+                  <div class="text-lg font-semibold text-slate-500">
+                    $50.00
+                  </div>
+                </div>
+                <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+                  <div class="space-x-2 flex text-sm">
+                    <label>
+                      <input class="sr-only peer" name="size" type="radio" value="8x10" checked />
+                      <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                        8x10
+                      </div>
+                    </label>
+                    <label>
+                      <input class="sr-only peer" name="size" type="radio" value="16x20" />
+                      <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                        16x20
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="flex space-x-4 mb-6 text-sm font-medium">
+                  <div class="flex-auto flex space-x-4">
+                    <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+                      Buy now
+                    </button>
+                    <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+                      Add to bag
+                    </button>
+                  </div>
+                  <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
+                    <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
         </div>
     </body>
 </html>

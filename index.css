@@ -20,10 +20,21 @@ html {
 #top-panel {
     width: 100%;
     border-bottom: 1px slategray solid;
+    height: 30px;
 }
 
 #back-btn {
     width: 20px;
+    margin-left: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#cart-btn {
+    width: 20px;
+    margin-top: 15px;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
 #container-top {

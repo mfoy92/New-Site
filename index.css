@@ -255,7 +255,7 @@ button, input, optgroup, select, textarea {
     font-weight: inherit;
     line-height: inherit;
     margin: 0;
-    padding: 20 ;
+    padding: 40 ;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -361,6 +361,13 @@ img, video {
     margin-left: 50px;
     box-shadow: 1px 1px 10px 1px #cbd5e1;
     cursor: pointer;
+}
+
+.form-container {
+    background-color: white;
+    width: 250px;
+    border-radius: 2px;
+    height: 300px;
 }
 
 label {

@@ -364,10 +364,11 @@ img, video {
 }
 
 #form-container {
+    display: flex;
     background-color: white;
     width: 250px;
     border-radius: 2px;
-    height: 300px;
+    height: 250px;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -379,10 +380,16 @@ img, video {
     align-items: center;
 }
 
+form {
+    justify-content: center;
+}
+
 label {
     margin-right: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .add-to-bag-btn {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }

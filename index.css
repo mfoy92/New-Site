@@ -394,8 +394,10 @@ label {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-    width: 200px;
+    width: 160px;
     justify-content: space-between;
+    align-content: space-between;
+   
     
     
 }

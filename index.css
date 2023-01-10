@@ -368,6 +368,7 @@ img, video {
     width: 250px;
     border-radius: 2px;
     height: 300px;
+    align-items: center;
 }
 
 label {

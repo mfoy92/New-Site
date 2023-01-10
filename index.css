@@ -22,6 +22,10 @@ html {
     border-bottom: 1px slategray solid;
 }
 
+#back-btn {
+    width: 20px;
+}
+
 #container-top {
    display: flex;
    justify-content: center;

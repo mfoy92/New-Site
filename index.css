@@ -369,6 +369,14 @@ img, video {
     border-radius: 2px;
     height: 300px;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.form-cart {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 label {

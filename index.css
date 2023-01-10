@@ -21,18 +21,19 @@ html {
     width: 100%;
     border-bottom: 1px slategray solid;
     height: 30px;
+    justify-content: space-between;
 }
 
 #back-btn {
     width: 20px;
     margin-left: 5px;
-    margin-top: 15px;
+    margin-top: 5px;
     cursor: pointer;
 }
 
 #cart-btn {
     width: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-right: 5px;
     cursor: pointer;
 }

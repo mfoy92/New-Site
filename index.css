@@ -22,6 +22,12 @@ html {
     border-bottom: 1px slategray solid;
     height: 30px;
     justify-content: space-between;
+    align-content: space-between;
+}
+
+#top-panel-items {
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 #back-btn {
@@ -250,6 +256,8 @@ button, input, optgroup, select, textarea {
     line-height: inherit;
     margin: 0;
     padding: 20 ;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 ::placeholder {
@@ -353,4 +361,8 @@ img, video {
     margin-left: 50px;
     box-shadow: 1px 1px 10px 1px #cbd5e1;
     cursor: pointer;
+}
+
+label {
+    margin-right: 5px;
 }

@@ -363,7 +363,7 @@ img, video {
     cursor: pointer;
 }
 
-.form-container {
+#form-container {
     background-color: white;
     width: 250px;
     border-radius: 2px;

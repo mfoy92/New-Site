@@ -353,7 +353,7 @@ img, video {
     flex-direction: row;
     gap: 20px;
     margin: 40px auto;
-    width: 642px;
+    width: 100%;
 }
 
 .separate-img {
@@ -372,4 +372,8 @@ img, video {
 
 label {
     margin-right: 5px;
+}
+
+.add-to-bag-btn {
+    margin-bottom: 10px;
 }

@@ -391,6 +391,11 @@ label {
 }
 
 .add-to-bag-btn {
+    display: flex;
+    flex-direction: column;
     margin-top: 15px;
+    width: 100px;
+    justify-content: space-between;
+    
     
 }

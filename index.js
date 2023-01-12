@@ -138,8 +138,9 @@ form.addEventListener("submit", function(event) {
 });
 
 function addToCart(size, price) {
-    // Update the quantity of the selected print size in the cart object
+    cart.push({size:size, quantity: 1, price: price});
     cart[size] += 1;
-    // Update the total cost in the cart object
     cart.totalCost += price;
 }
+
+

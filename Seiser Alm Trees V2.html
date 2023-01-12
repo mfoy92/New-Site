@@ -17,18 +17,6 @@
           </div>
         <div class="separate-img-container">
             <img class="separate-img" src="https://i.imgur.com/MFs11po.jpg">
-            <div class="add-to-cart-container">  
-                <form onsubmit="return validateForm()">
-                <label for="size">Select Print Size:</label>
-                <select id="size" name="size" onchange="displayPrice()" required>
-                    <option value="">Select print size</option>
-                    <option value="8x10" data-price="50">8x10 - $50</option>
-                    <option value="16x20" data-price="110">16x20 - $110</option>
-                </select>
-                <input type="hidden" id="price" name="price">
-                    <p>Price: <span id="display-price"></span></p><br>
-                <input id="add-to-cart-btn" type="submit" value="Add to Cart">
-            </div> 
             <div class="add-to-cart-container">
                 <form id="add-to-cart-form">
                     <label>
@@ -41,8 +29,7 @@
                 </form>
             </div> 
         </div>
-          </form>
-          <script>
+        <script>
               function validateForm() {
                   var size = document.getElementById("size").value;
                   if (size == "") {

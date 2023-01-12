@@ -398,6 +398,13 @@ label {
     justify-content: space-between;
     align-content: space-between;
    
-    
-    
+}
+
+.add-to-cart-container {
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    align-items: center;
+    pad: 20px;
+
 }

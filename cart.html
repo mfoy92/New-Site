@@ -23,7 +23,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="(item, index) in cart" v-if="item.quantity > 0" :key="index">
+                <tr v-for="item in cart" v-if="item.quantity > 0" :key="item.size">
                     <td>{{ item.size }}</td>
                     <td>{{ item.quantity }}</td>
                     <td>${{ item.price }}</td>

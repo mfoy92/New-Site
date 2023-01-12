@@ -132,10 +132,13 @@ let cart = {
 let form = document.getElementById("add-to-cart-form");
 form.addEventListener("submit", function(event) {
     event.preventDefault();
-    let size = form.querySelector('input[name="size"]:checked').value;
+    let sizeInputs = form.querySelectorAll('input[name="size"]');
+    let selectedSize = Array.from(sizeInputs).find(input => input.checked);
+    let size = selectedSize.value;
     let price = (size === "8x10") ? 50 : 110;
     addToCart(size, price);
 });
+
 
 function addToCart(size, price) {
     cart.push({size:size, quantity: 1, price: price});

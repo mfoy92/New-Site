@@ -1,7 +1,7 @@
 const aboutBtn = document.getElementById("about")
 const contactBtn = document.getElementById("contact")
 const aboutMessage = document.getElementById("about-message")
-const form = document.getElementById("form-contact")
+const Contactform = document.getElementById("form-contact")
 const container = document.getElementById("container")
 const addToCartBtn = document.getElementById("add-to-cart-btn")
 const sizeSmallRadio = document.getElementById("input-size-small")
@@ -12,7 +12,7 @@ aboutMessage.style.display = "block"
 })
 
 contactBtn.addEventListener("click", function(){ 
-form.style.display = "flex"
+Contactform.style.display = "flex"
 })
 
 
@@ -121,4 +121,25 @@ function displayPrice() {
     var price = size.options[size.selectedIndex].getAttribute("data-price");
     document.getElementById("price").value = price;
     document.getElementById("display-price").innerHTML = "$" + price;
+}
+
+let cart = {
+    "8x10": 0,
+    "16x20": 0,
+    "totalCost":0
+};
+
+let form = document.getElementById("add-to-cart-form");
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    let size = form.querySelector('input[name="size"]:checked').value;
+    let price = (size === "8x10") ? 50 : 110;
+    addToCart(size, price);
+});
+
+function addToCart(size, price) {
+    // Update the quantity of the selected print size in the cart object
+    cart[size] += 1;
+    // Update the total cost in the cart object
+    cart.totalCost += price;
 }

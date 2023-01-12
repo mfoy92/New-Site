@@ -27,8 +27,19 @@
                 </select>
                 <input type="hidden" id="price" name="price">
                     <p>Price: <span id="display-price"></span></p><br>
-                <input type="submit" value="Add to Cart">
-            </div>  
+                <input id="add-to-cart-btn" type="submit" value="Add to Cart">
+            </div> 
+            <div class="add-to-cart-container">
+                <form id="add-to-cart-form">
+                    <label>
+                        <input type="radio" name="size" value="8x10" checked> 8x10
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="16x20"> 16x20
+                    </label>
+                    <button type="submit">Add to Cart</button>
+                </form>
+            </div> 
         </div>
           </form>
           <script>

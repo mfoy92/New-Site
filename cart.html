@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+<body>
+<div id="cart-page">
+    <h1>My Cart</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Print Size</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="(item, index) in cart" :key="index">
+                <td>{{ item.size }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>${{ item.price }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Total: ${{ cart.totalCost }}</h2>
+</div>
+</body>
+</html>

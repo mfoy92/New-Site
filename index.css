@@ -126,11 +126,6 @@ img, video {
     max-width: 100%;
 }
 
-audio, canvas, embed, iframe, img, object, svg, video {
-    display: block;
-    vertical-align: middle;
-}
-
 .pt-64 {
     padding-top: 16rem;
 }
@@ -230,19 +225,6 @@ input[type=email]:not(.unstyled), input[type=password]:not(.unstyled), input[typ
     padding: .25rem .5rem;
 }
 
-[multiple], [type=date], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], select, textarea {
-    --tw-shadow: 0 0 #0000;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #fff;
-    border-color: #6b7280;
-    border-radius: 0;
-    border-width: 1px;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    padding: .5rem .75rem;
-}
-
 textarea {
     resize: vertical;
 }
@@ -277,11 +259,6 @@ button, input, optgroup, select, textarea {
 
 .h-5 {
     height: 1.25rem;
-}
-
-audio, canvas, embed, iframe, img, object, svg, video {
-    display: block;
-    vertical-align: middle;
 }
 
 img, video {
@@ -364,12 +341,17 @@ img, video {
     margin-bottom: 5px;
 }
 
+.select-size-element {
+    margin-top: 5px;
+}
+
 #form-container {
     display: flex;
     background-color: white;
     width: 250px;
     border-radius: 2px;
     height: 250px;
+    margin-top: 0px;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -403,9 +385,9 @@ label {
 .add-to-cart-container {
     background-color: white;
     width: 200px;
-    height: 20px;
+    height: 235px;
+    margin-top: 0px;
     align-items: center;
-    pad: 20px;
 
 }
 
@@ -439,7 +421,7 @@ label {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 30px;
 }
 

@@ -123,21 +123,25 @@ function displayPrice() {
     document.getElementById("display-price").innerHTML = "$" + price;
 }
 
-let cart = {
-    "8x10": 0,
-    "16x20": 0,
-    "totalCost":0
-};
+let cart = [
+    { size: '8x10', quantity: 0, price: 50 },
+    { size: '16x20', quantity: 0, price: 110 }
+];
 
 let form = document.getElementById("add-to-cart-form");
 form.addEventListener("submit", function(event) {
     event.preventDefault();
-    let sizeInputs = form.querySelectorAll('input[name="size"]');
-    let selectedSize = Array.from(sizeInputs).find(input => input.checked);
-    let size = selectedSize.value;
-    let price = (size === "8x10") ? 50 : 110;
-    addToCart(size, price);
+    let size = form.querySelector("#size-select").value;
+    let item = cart.find(i => i.size === size);
+    if (item) {
+        item.quantity += 1;
+    } else {
+        let price = (size === "8x10") ? 50 : 110;
+        cart.push({ size: size, quantity: 1, price: price });
+    }
 });
+
+
 
 
 function addToCart(size, price) {

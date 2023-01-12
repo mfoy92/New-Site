@@ -25,13 +25,13 @@
                     <div class="flex">
                         <div class="labels">
                         <label>
-                            <input class="input-size" name="size" type="radio" value="8x10" checked />
+                            <input id="input-size-small" class="input-size" name="size" type="radio" value="8x10" checked />
                             <div class="size">
                             8x10
                             </div>
                         </label>
                         <label>
-                            <input class="input-size" name="size" type="radio" value="16x20" />
+                            <input id="input-size-large" class="input-size" name="size" type="radio" value="16x20" />
                             <div class="size">
                             16x20
                             </div>
@@ -40,8 +40,7 @@
                     </div>
                     <div class="flex space-x-4 font-medium">
                          <div class="flex-auto flex space-x-4">
-                        <button class="add-to-bag-btn h-10 px-6 font-semibold border border-slate-200 text-slate-900" type="button">
-                        Add to bag     $50
+                        <button id="add-to-cart-btn" class="add-to-bag-btn h-10 px-6 font-semibold border border-slate-200 text-slate-900" type="button">
                         </button>
                     </div>
                 </div>
@@ -49,5 +48,6 @@
             </div>
             </div>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>

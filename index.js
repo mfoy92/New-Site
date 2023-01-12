@@ -3,7 +3,9 @@ const contactBtn = document.getElementById("contact")
 const aboutMessage = document.getElementById("about-message")
 const form = document.getElementById("form-contact")
 const container = document.getElementById("container")
-
+const addToCartBtn = document.getElementById("add-to-cart-btn")
+const sizeSmallRadio = document.getElementById("input-size-small")
+const sizeLargeRadio = document.getElementById("input-size-large")
 
 aboutBtn.addEventListener("click", function(){ 
 aboutMessage.style.display = "block"
@@ -13,12 +15,16 @@ contactBtn.addEventListener("click", function(){
 form.style.display = "flex"
 })
 
+
+
 const images = [
     {
-        name: 'Seiser Alm Trees',
+        name: 'Seiser Alm Trees V2',
         image: 'https://i.imgur.com/MFs11po.jpg',
         id: 'img',
         class: 'img-item', 
+        priceSmall: '$50',
+        priceLarge: '$110'
     },
     {
         name: 'Seiser Alm Huts',
@@ -99,3 +105,20 @@ for (let image of images){
     `
 }
 container.innerHTML = imagesHtml
+
+sizeSmallRadio.addEventListener("click", function(){ 
+    addToCartBtn.innerHTML = "${image.priceSmall}"
+    })
+
+sizeLargeRadio.addEventListener("click", function(){
+    addToCartBtn.innerHTML = '${image.priceLarge}'
+})
+
+//for version two 
+
+function displayPrice() {
+    var size = document.getElementById("size");
+    var price = size.options[size.selectedIndex].getAttribute("data-price");
+    document.getElementById("price").value = price;
+    document.getElementById("display-price").innerHTML = "$" + price;
+}

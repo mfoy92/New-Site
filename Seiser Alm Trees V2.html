@@ -15,9 +15,8 @@
                 </a>      
             </div>
           </div>
-        <div class="separate-img-container-two">
+        <div class="separate-img-container">
             <img class="separate-img" src="https://i.imgur.com/MFs11po.jpg">
-        </div>
         <form onsubmit="return validateForm()">
             <label for="size">Select Print Size:</label>
             <select id="size" name="size" onchange="displayPrice()" required>
@@ -28,6 +27,7 @@
             <input type="hidden" id="price" name="price">
             <p>Price: <span id="display-price"></span></p>
             <input type="submit" value="Add to Cart">
+        </div>
           </form>
           <script>
               function validateForm() {

@@ -433,3 +433,46 @@ label {
     text-align: center;
     margin-bottom: 20px;
 }
+
+#add-to-cart-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#add-to-cart-form label {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#add-to-cart-form input[type="radio"] {
+    display: none;
+}
+
+#add-to-cart-form input[type="radio"] + label {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#add-to-cart-form input[type="radio"]:checked + label {
+    background-color: #f2f2f2;
+}
+
+#add-to-cart-form button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
+
